@@ -1,0 +1,8 @@
+- root_url = "http://localhost:3000/"
+!!!
+%html
+  %head
+    %title TCG Scraper for Cockatrice Bookmarklet
+    = stylesheets "screen"
+  %body
+    = link "TCG Scraper for Cockatrice", "javascript:(function(){window.__tcg_cockatrice_path='#{root_url}javascripts/';var s=document.createElement('script');s.type='text/javascript';s.src='#{root_url}javascripts/initializer.js?ts='+(new Date()).getTime();document.getElementsByTagName('head')[0].appendChild(s);})();"

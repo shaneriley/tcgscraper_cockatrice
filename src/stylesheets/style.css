@@ -1,0 +1,67 @@
+#harvest_bookmarklet {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000000;
+  padding: 5px;
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-bottom-right-radius: 8px;
+  background: #ffffff; }
+#harvest_bookmarklet a#harvest_bookmarklet_help {
+  display: block;
+  width: 16px;
+  height: 16px;
+  text-indent: -8685px;
+  overflow: hidden;
+  background: transparent url("icon_help.png") 50% 50% no-repeat; }
+#harvest_bookmarklet_modal {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 70px;
+  z-index: 10000000;
+  width: 400px;
+  padding: 20px;
+  margin: 0 0 0 -220px;
+  background: #ffffff; }
+#harvest_bookmarklet_modal_layer {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999999;
+  content: "";
+  background: rgba(0, 0, 0, .7); }
+  #harvest_bookmarklet_modal a.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+    text-indent: -8685px;
+    overflow: hidden;
+    background: transparent url("icon_close.png") 50% 50% no-repeat; }
+  #harvest_bookmarklet_modal p { font-size: 14px; }
+  #harvest_bookmarklet_modal dt {
+    width: auto;
+    padding: 0 10px 5px 0;
+    margin: 0;
+    font-weight: bold; }
+  #harvest_bookmarklet_modal dd {
+    overflow: hidden;
+    padding: 0 0 5px 0;
+    margin: 0; }
+  #harvest_bookmarklet_modal mark {
+    padding: 0 2px;
+    background: #e7e7e7; }
+  #harvest_bookmarklet_modal span.cmd {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    color: transparent;
+    background: transparent url("icon_cmd.png") 50% 50% no-repeat; }

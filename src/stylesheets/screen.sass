@@ -1,0 +1,73 @@
+$p: "tcg_cockatrice_bookmarklet_"
+= opacity($percentage)
+  opacity: $percentage
+  filter: alpha(opacity=$percentage*100)
+
+#tcg_cockatrice_bookmarklet
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 10000000
+  padding: 5px
+  -webkit-border-bottom-right-radius: 8px
+  -moz-border-radius-bottomright: 8px
+  border-bottom-right-radius: 8px
+  background: #ffffff
+  a##{$p}help
+    display: block
+    width: 16px
+    height: 16px
+    text-indent: -8685px
+    overflow: hidden
+    background: transparent url("icon_help.png") 50% 50% no-repeat
+##{$p}modal_layer
+  display: none
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 9999999
+  content: ""
+  background: rgba(0, 0, 0, .7)
+##{$p}modal
+  display: none
+  position: absolute
+  left: 50%
+  top: 70px
+  z-index: 10000000
+  width: 400px
+  padding: 20px
+  margin: 0 0 0 -220px
+  font: normal 14px/120% Helvetica, Arial, sans-serif
+  text-align: left
+  color: #333333
+  background: #ffffff
+  a.close
+    position: absolute
+    right: 20px
+    top: 20px
+    z-index: 1
+    width: 16px
+    height: 16px
+    text-indent: -8685px
+    overflow: hidden
+    background: transparent url("/images/icon_close.png") 50% 50% no-repeat
+  h1
+    display: block
+    padding: 0 0 20px 0
+    margin: 0
+    font: normal 18px/120% Helvetica, Arial, sans-serif
+    text-align: left
+    color: #333333
+  input[type="text"]
+    width: 230px
+    height: 22px
+    padding: 2px 5px
+    margin: 0 10px 0 0
+    font: normal 14px/120% Helvetica, Arial, sans-serif
+    vertical-align: middle
+    border: 1px solid #cccccc
+    background: #f0f0f0
+  input[type="submit"]
+    vertical-align: middle
